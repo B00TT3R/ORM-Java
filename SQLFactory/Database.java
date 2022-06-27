@@ -24,10 +24,6 @@ public class Database {
     public static boolean deletar(SQLClass registro){
         return executarSQL( registro.deleteSQL() );
     }
-    /* public static boolean abrir(SQLClass registro, int id){
-        return executarSQL( registro.selectSQL() );
-    }     */
-    
     
     public static boolean executarSQL( String sql ){
         boolean ok = false;
@@ -45,7 +41,7 @@ public class Database {
         return ok;
         
     }
-    public static boolean executarSQLInserir( String nomeTabela, int id ){
+    public static boolean executarSQLSelect( String nomeTabela, int id ){
         
         boolean ok = false;
         Connection currentConn = connect();

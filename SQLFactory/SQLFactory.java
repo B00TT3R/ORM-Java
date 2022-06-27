@@ -5,13 +5,13 @@ public class SQLFactory{
 
         
         Produto produto = new Produto();
-        produto.id=2;
+        produto.id=1;
         produto.descricao = "Hamburguer";
-        produto.preco = 20.00;;        
+        produto.preco = 15.00;        
         
         /* Database.executarSQL(produto.insertSQL()); */
 
-        boolean retorno = Database.executarSQLInserir("produtos", 2 );
+        boolean retorno = Database.executarSQLSelect("produtos", 1 );
         if (retorno) {
             
         } 
